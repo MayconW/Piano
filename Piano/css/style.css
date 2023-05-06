@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Sigmar:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +9,7 @@
 }
 
 body{
-    background-color: #ebebeb;   
+    background-color: #92d2e6;   
 }
 
 .VirtualPiano{
@@ -95,6 +96,7 @@ margin-top: 0px;
     border-radius: 4px 4px 15px 15px;
     border-bottom: 8px solid #ddd;
     color: rgba(0,0,0,0.7);
+   
 }
 
 .key {
@@ -114,7 +116,6 @@ border-radius: 0px 0px 7px 10px;
 border-bottom: 8px solid #222;
 margin-left: -25px;
 margin-top: -0.5px;
-
 background-color: #222;
 color: rgba(255, 255, 255, 0.9);
 
@@ -134,7 +135,7 @@ color: rgba(255, 255, 255, 0.9);
    
 }
 
-.piano__keys .white:hover{
+.piano__keys .white:hover{ 
     background-color: #bbb9b9;
     border-bottom: 10px solid #bbb9b9;
     cursor: pointer;
@@ -147,4 +148,44 @@ color: rgba(255, 255, 255, 0.9);
     background-color: #414141;
     border-bottom: 10px #414141;
     cursor: pointer;
+}
+
+
+.music_title{
+
+    font-family: 'Poppins';
+    color: #000000;
+    font-size: 2rem;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: px;
+}
+.music_title:hover{
+    user-select: none;
+    color: rgb(115, 165, 74);
+    
+}
+
+.music_notes{
+    font-family: 'Poppins';
+    margin-top: -70px;
+    color: rgb(8, 8, 8);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.music_notes:hover{
+    user-select: none;
+    color: rgb(115, 165, 74);
+    
+}
+
+.music_auto{
+    aspect-ratio: 1/1;
+    margin-left: 0px;
+    
+    
+  
 }
