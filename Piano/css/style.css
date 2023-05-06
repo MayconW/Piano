@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Sigmar:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sigmar';
+}
+
+body{
+    background-color: #ebebeb;   
+}
+
+.VirtualPiano{
+    background-color: #121212;
+    width: 800px;
+    height: 300px;
+    margin: 100px auto 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;  
+    
+    
+}
+
+.controls {
+background-color: #202020;
+padding: 20px;
+border-radius: 20px 20px 0px 0px;
+color: rgba(255, 255,255,0.8);
+display: flex;  
+width: 100%;
+justify-content: space-between;
+
+}
+.controls s1 {
+    font-weight: 300;
+    
+     font-size: 1.4rem;
+    color: rgba(255, 255,255,0.8);
+}
+.switcher{
+width: 50px;
+height: 25px;
+background-color: #555;
+display: flex;
+border-radius: 30px;
+justify-content: flex-start;
+margin-left: 10px;
+margin-top: 0px;
+
+
+}
+
+.switcher_button{
+    aspect-ratio: 1/1;
+    height: 100%;
+    
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.switcher--active { 
+    background-color: #006eff;
+    justify-content: flex-end;
+}
+.checkbox_label{
+    display: flex;
+    align-items: center;
+}
+
+.piano__keys{
+    background-color: #121212;
+    color:rgba(0, 0, 0, 0.8);
+    display: flex;
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+    
+    padding: 30px 30px;
+    margin-bottom: 20px;
+}
+
+.white{
+    margin-left: 1px;
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+    border-radius: 4px 4px 15px 15px;
+    border-bottom: 8px solid #ddd;
+    color: rgba(0,0,0,0.7);
+}
+
+.key {
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   padding-bottom: 5px;
+   user-select: none;
+  
+}
+
+.black{
+width: 25px;
+height: 85px;
+border-radius: 0px 0px 7px 10px;
+border-bottom: 8px solid #222;
+margin-left: -25px;
+margin-top: -0.5px;
+
+background-color: #222;
+color: rgba(255, 255, 255, 0.9);
+
+
+}
+
+.black--pressed{
+    background: linear-gradient(#498686, rgb(186, 225, 236));
+    border-bottom: none;
+    height: 88px;
+   
+}
+
+.white--pressed{
+    background: linear-gradient(#b4ffff, rgb(211, 252, 246));
+    border-bottom: none;
+   
+}
+
+.piano__keys .white:hover{
+    background-color: #bbb9b9;
+    border-bottom: 10px solid #bbb9b9;
+    cursor: pointer;
+}
+.piano__keys .white:nth-child(){
+    margin-right: 20px;
+}
+
+.piano__keys .black:hover{
+    background-color: #414141;
+    border-bottom: 10px #414141;
+    cursor: pointer;
+}
