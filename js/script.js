@@ -8,14 +8,14 @@ const switcher = document.querySelector('.switcher');
 const playNote = (note) => {
     console.log(note.getAttribute('data-note'));
     const data_note = note.getAttribute('data-note');
-    const audio = new Audio (`../notes/${data_note}.wav`);
+    const audio = new Audio (`../Piano/notes/${data_note}.wav`);
     audio.play();
     
 }
 
 const playNoteAuto = (note) => {
     
-    const audio = new Audio (`../notes/${note}.wav`);
+    const audio = new Audio (`../Piano/notes/${note}.wav`);
     audio.play();
     
 }
